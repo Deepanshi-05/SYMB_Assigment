@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flatty</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blue:#3B97D3;
+  --orange:#F4A742;
+  --light-bg:#F7F7F7;
+  --heading:#555;
+  --text:#9AA7AD;
+  --border:#E6E6E6;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Open Sans',sans-serif;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+  height:100vh;
+  background:var(--blue);
+  color:#fff;
+  padding:40px 80px;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  font-size:14px;
+}
+
+.hero-content{
+  height:calc(100vh - 80px);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.hero h1{
+  font-size:46px;
+  font-weight:300;
+  line-height:1.3;
+  margin-bottom:25px;
+}
+
+.cta{
+  display:flex;
+}
+
+.cta input{
+  padding:12px;
+  width:260px;
+  border:none;
+  border-radius:4px 0 0 4px;
+}
+
+.cta button{
+  padding:12px 22px;
+  background:var(--orange);
+  border:none;
+  color:#fff;
+  border-radius:0 4px 4px 0;
+  cursor:pointer;
+}
+
+.hero img{
+  width:380px;
+}
+
+/* ================= SECTIONS ================= */
+
+section{
+  padding:90px 0;
+  text-align:center;
+  background:var(--light-bg);
+}
+
+section h2{
+  color:var(--heading);
+  font-weight:300;
+  font-size:36px;
+  margin-bottom:15px;
+}
+
+section p{
+  max-width:650px;
+  margin:0 auto 70px;
+  color:var(--text);
+  line-height:1.6;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+  display:flex;
+  justify-content:center;
+  gap:80px;
+}
+
+.feature{
+  width:220px;
+}
+
+.feature img{
+  width:110px;
+  margin-bottom:20px;
+}
+
+.feature h4{
+  color:#777;
+  font-weight:400;
+  margin-bottom:10px;
+}
+
+.feature p{
+  font-size:14px;
+  margin:0;
+}
+
+/* ================= EMAIL STRIP ================= */
+
+.email-strip{
+  background:#F2F6F9;
+  padding:55px 0;
+  text-align:center;
+}
+
+.email-strip h3{
+  color:#666;
+  font-weight:300;
+  margin-bottom:20px;
+}
+
+.email-strip .cta{
+  justify-content:center;
+}
+
+.email-strip input{
+  border-radius:30px 0 0 30px;
+  padding:14px 22px;
+  width:300px;
+  border:1px solid var(--border);
+}
+
+.email-strip button{
+  border-radius:0 30px 30px 0;
+  padding:14px 32px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ================= PHONE ================= */
+
+.phone img{
+  width:240px;
+}
+
+/* ================= DIVIDER CTA ================= */
+
+.divider-cta{
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  padding:45px 0;
+  background:#fff;
+}
+
+.divider-cta .cta{
+  justify-content:center;
+}
+
+.bordered-cta input{
+  border:1px solid var(--border);
+  background:#fff;
+}
+
+.bordered-cta button{
+  box-shadow:none;
+}
+
+
+/* ================= TEAM ================= */
+
+.team{
+  display:flex;
+  justify-content:center;
+  gap:80px;
+}
+
+.member img{
+  width:140px;
+  border-radius:50%;
+  margin-bottom:15px;
+}
+
+.member h4{
+  color:#777;
+  font-weight:400;
+  margin-bottom:10px;
+}
+
+.member p{
+  font-size:14px;
+  max-width:220px;
+}
+
+/* ================= CARD CTA ================= */
+
+.email-card{
+  max-width:700px;
+  margin:70px auto;
+  padding:40px;
+  background:#fff;
+  border-radius:8px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+  text-align:center;
+}
+
+.email-card p{
+  color:#777;
+  margin-bottom:20px;
+}
+
+.email-card input{
+  border:1px solid var(--border);
+  background:#fff;
+}
+
+.email-card button{
+  box-shadow:none;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact{
+  background:var(--light-bg);
+}
+
+
+form{
+  max-width:600px;
+  margin:0 auto;
+}
+
+form input, form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  border:1px solid var(--border);
+}
+
+form button{
+  background:var(--orange);
+  color:#fff;
+  border:none;
+  padding:12px 35px;
+  cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="nav">
+    <div>FLATTY</div>
+    <div>Already a member?</div>
+  </div>
+
+  <div class="hero-content">
+    <div>
+      <h1>Make your landing page<br>look really good.</h1>
+      <div class="cta">
+        <input placeholder="Enter your email address">
+        <button>Invite Me!</button>
+      </div>
+    </div>
+
+    <img src="assignment_phonr1.png">
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section>
+  <h2>Your Landing Page<br>Looks Wonderful Now.</h2>
+  <p>Thoughtful design that balances clarity, style, and usability.</p>
+
+  <div class="features">
+    <div class="feature">
+      <img src="chrome.png">
+      <h4>1 - Browser Compatibility</h4>
+      <p>Our landing page works smoothly across all modern browsers, ensuring a consistent and reliable user experience without layout or performance issues.</p>
+    </div>
+
+    <div class="feature">
+      <img src="mail.png">
+      <h4>2 - Email Campaigns</h4>
+      <p>Easily create and manage email campaigns to stay connected with users and deliver updates, announcements, and important information effectively.</p>
+    </div>
+
+    <div class="feature">
+      <img src="doc.png">
+      <h4>3 - Gather Your Notes</h4>
+      <p>Organize and store your ideas, tasks, and important notes in one place, making it easier to manage information and stay productive.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL STRIP -->
+<div class="email-strip">
+  <h3>Get early access before launch</h3>
+  <div class="cta">
+    <input placeholder="Enter your email address">
+    <button>Invite Me!</button>
+  </div>
+</div>
+
+<!-- PHONE -->
+<section class="phone">
+  <h2> Flatty is for Everyone.</h2>
+  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+  <img src="assignment_phone2.png">
+</section>
+
+<div class="divider-cta bordered-cta">
+  <div class="cta">
+    <input placeholder="Enter your email address">
+    <button>Invite Me!</button>
+  </div>
+</div>
+
+
+<!-- TEAM -->
+<section>
+  <h2>Our Awesome Team.<br>Design Lovers.</h2>
+  <p>Designed to keep users focused while providing a smooth experience.</p>
+
+  <div class="team">
+    <div class="member">
+      <img src="https://i.pravatar.cc/200?img=3">
+      <h4>Michael Robson</h4>
+      <p>Provides useful details in a clear and structured format.</p>
+    </div>
+
+    <div class="member">
+      <img src="https://i.pravatar.cc/200?img=5">
+      <h4>Pete Ford</h4>
+      <p>Helps users quickly understand the purpose of this feature.</p>
+    </div>
+
+    <div class="member">
+      <img src="https://i.pravatar.cc/200?img=8">
+      <h4>Angelica Finning</h4>
+      <p>Focused content that improves usability and clarity.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CARD CTA -->
+<div class="email-card">
+  <p>Stay updated with our design journey</p>
+  <div class="cta" style="justify-content:center">
+    <input placeholder="Enter your email address">
+    <button>Invite Me!</button>
+  </div>
+</div>
+
+<!-- CONTACT -->
+<section class="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input placeholder="Your Name">
+    <input placeholder="Your Email">
+    <input placeholder="Subject">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </form>
+</section>
+
+</body>
+</html>
