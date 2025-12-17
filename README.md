@@ -1,5 +1,9 @@
 # Assignment: Web Page Using HTML/CSS
 
+## Live Web Page
+You can view the live assignment web page [here](https://deepanshi-05.github.io/SYMB_Assigment/).
+
+
 ## Description
 This project is a simple web page built using **HTML** and **CSS**.  
 The design follows the reference UI provided [here](https://symb-assessment.gitlab.io/ui-assignments/assignments/assignment_2.html).
