@@ -23,5 +23,3 @@ The design follows the reference UI provided [here](https://symb-assessment.gitl
 2. Open the `index.html` file in your web browser.
 3. The page should render the input box, button, and structured layout as designed.
 
-- **Your Name**  
-
