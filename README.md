@@ -1,7 +1,7 @@
 # Assignment: Web Page Using HTML/CSS
 
 ## Live Web Page
-You can view the live assignment web page [here]((https://symb-assigment.vercel.app/)).
+You can view the live assignment web page [here](https://symb-assigment.vercel.app/).
 
 
 ## Description
